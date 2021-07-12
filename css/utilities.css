@@ -9,6 +9,7 @@ ul {
   a {
     text-decoration: none;
     color: #000;
+    cursor: none;
   }
   
   h1, h2 {
@@ -52,9 +53,9 @@ ul {
 }
 
 .cursor {
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid black;
+  width: 1rem;
+  height: 1rem;
+  border: 0px solid black;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);

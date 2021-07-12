@@ -42,7 +42,7 @@ body {
 
 .grid-item-3 {
     grid-area: content;
-    padding-top: 20px;
+    
 }
 
 .grid-item h3 {
@@ -74,11 +74,8 @@ li {
 
 .casestudy-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
     margin-top: 50px;
     margin-bottom: 150px;
 }
 
-.p-nav-items {
-    align-self: flex-start;
-}
