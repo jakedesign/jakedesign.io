@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3554A7;
+}
+
+
+
+.landing-box {
+    background-color:#DDD9D3;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6vh;
+    background-color: #DDD9D3;
+}
+
+.logo {
+    color: #3554A7;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.logo a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.nav-links li:nth-child(4) {
+    padding: 0 0 0 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3554A7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* BURGER */
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 29px;
+    height: 2px;
+    background-color: #3554A7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-38deg) translate(-4px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(38deg) translate(-4px,-6px);
+}
+
+/* BURGER SCREEN */
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 88vh;
+        top: 8vh;
+        background-color: #3554A7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        padding: 4vh;
+        opacity: 0;
+    }
+    .nav-links a {
+        font-size: 25px;
+        font-weight: 400;
+        color: #DDD9D3;
+    }
+    .nav-links li:nth-child(4) {
+        padding: 4vh 0 0 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* HERO */
+
+.hero h1 {
+    font-size: 42px;
+    margin: auto;
+    margin-top: 9vh;
+    margin-bottom: 1vh;
+    font-weight: 400;
+    color: #3554A7;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+}
+
+.heroText p {
+    max-width: 93%;
+    font-size: 25px;
+    font-weight: 300;
+    color: #3554A7;
+    line-height: 1.7;
+    margin: 0;
+
+}
+
+.jakeEmoji {
+    height: 328px;
+    width: 328px;
+    margin: auto;
+    margin-top: 17vh;
+    border-radius: 50%;
+    border: 2px solid #3554A7;
+    background-color:transparent;
+    background-position: 45px 35px;
+    background-image: url(../images/jakeEmoji.png);
+    background-size: 275px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 66% 34%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* HERO BUTTON */
+
+.buttonContainer {
+    margin-top: 11vh;
+}
+
+.btnPrimary {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    border: 2px solid #3554A7;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #DDD9D3;
+    background-color: #3554A7;
+    margin: 0px;
+    position: relative;
+}
+
+.hoverButton :hover {
+    background-color: transparent;
+    color: #3554A7;
+}
+
+.button-lineDivider {
+    height: 2px;
+    margin-top: -2px;
+    background-color: #3554A7;
+}
+
+/* SCROLL PROMPT */
+
