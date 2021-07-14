@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    /* cursor: none; */
+    cursor: none;
 }
 
 ul {
@@ -42,7 +42,7 @@ img {
 .cursor {
     width: 1.2rem;
     height: 1.2rem;
-    border: 1px solid black;
+    border: 0px solid black;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -72,7 +72,7 @@ nav {
 .logo a {
     text-decoration: none;
     list-style: none;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .nav-links li {
@@ -92,7 +92,7 @@ nav {
     color: #375BBB;
     font-weight: 400;
     font-size: 18px;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .nav-links .arrow {
@@ -286,7 +286,7 @@ li.dropdown {
     margin: 0px;
     position: relative;
     z-index: 0;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .hoverButton :hover {
@@ -330,7 +330,7 @@ li.dropdown {
 }
 
 .arrowBTN {
-    background-image: url(../images/blue-arrow-angle.svg) !important; 
+    background-image: url(../images/blue-arrow-angle.svg); 
     background-size: 16px;
     background-repeat: no-repeat; 
     background-position: center;
@@ -338,7 +338,7 @@ li.dropdown {
     padding: 30px 30px;
     background-color: transparent;
     margin: 0px;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .wrapperContainer {
@@ -471,7 +471,7 @@ li.dropdown {
 }
 
 .bottomItems a {
-    /* cursor: none; */
+    cursor: none;
 }
 
 /* FOOTER */
@@ -524,7 +524,7 @@ footer {
 }
 
 .social a {
-    /* cursor: none; */
+    cursor: none;
 }
 
 .social .arrow {
