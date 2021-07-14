@@ -251,7 +251,7 @@ li.dropdown {
     border: 2px solid #375BBB;
     background-color:transparent;
     background-position: 45px 35px;
-    background-image: url(/jakedesign.io/images/emoji_peace.svg);
+    background-image: url("../images/emoji_peace.svg");
     background-size: 275px;
     background-repeat: no-repeat;
     display: flex;
@@ -330,7 +330,7 @@ li.dropdown {
 }
 
 .arrowBTN {
-    background-image: url(/images/blue-arrow-angle.svg); 
+    background-image: url("/images/blue-arrow-angle.svg"); 
     background-size: 16px;
     background-repeat: no-repeat; 
     background-position: center;
