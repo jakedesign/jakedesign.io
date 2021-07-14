@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #000;
+  line-height: 1.6;
+  background-image: url(/images/BACKGROUND.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: none;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 5fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+        "header header content"
+        "data blank content";
+    align-items: center;
+    margin-top: 150px;
+}
+
+
+.grid-item-1 {
+    grid-area: header;
+    font-size: 20px;
+}
+
+.grid-item-2 {
+    grid-area: data;
+}
+
+.grid-item-3 {
+    grid-area: content;
+    
+}
+
+.grid-item h3 {
+    border-left: 1px solid;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.grid-item h5 {
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.grid-item h4 {
+    border-left: 1px solid;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+li {
+    font-weight: 300;
+}
+
+
+.casestudy-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+

@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/hero.css" type="text/css">
-    <link rel="stylesheet" href="css/utilities.css" type="text/css">
-    <link rel="stylesheet" href="css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="css/projectshowcase.css" type="text/css">
-    <link rel="stylesheet" href="css/style_home.css" type="text/css">
-    <link rel="stylesheet" href="css/bottom.css" type="text/css">
-    <link rel="stylesheet" href="css/footer.css" type="text/css">
-    <title>jakedesign.io | portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 
 <body>
     <div class="cursor"></div>
 
-<!-- NAV BAR -->
-<nav class="navContainer">
-    <div class="logo">
-        <a href="index.html">jakedesign.io</a>
-    </div>
-    <ul class="navLinks">
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Work 
-                <img class="arrow" src="images/arrow.svg" alt="arrowvector">
-            </a>
-                <div class="dropdownContent">
-                    <a href="#">Department Of Energy</a>
-                    <a href="#">Play It Forward</a>
-                    <a href="#">Momentum</a>
-                    <a href="#">Munch</a>
-                </div>
-            </div>
-        </li>
-        <li>
-            <a href="#">About 
-                <img class="arrow" src="images/arrow.svg" alt="arrowvector">
-            </a>
-        </li>
-        <li>
-            <a href="#">Resume 
-                <img class="arrow" src="images/arrow.svg" alt="arrowvector">
-            </a>
-        </li>
-        <li>
-            <a href="#">Contact 
-                <img class="arrow" src="images/arrow.svg" alt="arrowvector">
-            </a>
-        </li>
-    </ul>
-</nav>
+    <div class="landing-box">
+        <div class="container">
+            <!-- NAV BAR -->
+            <nav>
 
-<!-- WEBPAGE HEADER -->
-    <section class="hero">
-        <div class="container grid">
-            <div class="heroText">
-                <h1>Hello, My name is Jake Armstead.</h1>
-                <p>I'm a budding UX/UI designer with a passion for using his brain cells &#129504 to create design experiences that are meaningful, intuitive, and purposeful! </p>
-            </div>
-            <div class="jakeEmoji"></div>
+                <div class="logo">
+                    <a href="index2.html">jakedesign.io</a>
+                </div>
+                <ul class="nav-links">
+                    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Work<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a>
+
+                        <div class="dropdownContent">
+                            <a href="#">Department Of Energy</a>
+                            <a href="#">Play It Forward</a>
+                            <a href="#">Momentum</a>
+                            <a href="#">Munch</a>
+                        </div>
+
+                    </li>
+                    <li><a href="#">About<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
+                    <li><a href="#">Resume<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
+                    <li><a href="#">Contact<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+
+
+<!-- HERO MOBILE -->
+<div class="mobile-header">
+    <div class="mobile-header-grid">
+        <div class="top-box">
+            <img src="/images/emoji_peace.svg" alt="emoji-peace">
+            <img src="/images/emoji_code.svg" alt="emoji-code">
+            <img src="/images/emoji_thumbs.svg" alt="emoji-thumbs">
         </div>
-    </section>
+            <h2>Hello!</h2>
+            <h3>My name is Jake Armstead.</h3>
+    </div>
+</div>
+
+<!-- HERO DESKTOP -->
+            <section class="hero">
+                <div class="hero-grid">
+                    <div class="heroText">
+                        <h1>Hello, My name is Jake Armstead.</h1>
+                        <p>A budding UX/UI designer with a passion for using his brain cells &#129504 to create design
+                            experiences that are meaningful, intuitive, and purposeful!</p>
+                    </div>
+                    <div class="jakeEmoji"></div>
+                </div>
+            </section>
 
 <!-- HOVER BUTTON -->
-    <section>
-        <div class="buttonContainer">
-            <div class="hoverButton">
-                <input class="btnPrimary" type="submit" value="Hover Over Me!">
+            <section>
+                <div class="vert-line"></div>
+                <div class="buttonContainer">
+                    <div class="hoverButton">
+                        <input class="btnPrimary" type="submit" value="Hover Over Me!">
+                        <input class="btnSecondary" type="submit" value="Press Me!">
+                    </div>
+                </div>
+                <div class="button-lineDivider"></div>
+            </section>
+            <div class="scroll-prompt">
+                <p>plz scroll down</p>
             </div>
         </div>
-        <div class="lineContainer">
-            <div class="lineDivider"></div>
-        </div>
-    </section>
+    </div>
+    
 
 <!-- PROJECT SHOWCASE GRID -->
-    <!-- DOE -->
+        
     <section class="wrapperContainer">
+        <!-- DOE  -->
         <div class="doeWrapper">
             <div class="box1">
                 <img src="images/doe.png" alt="doeimage" class="">
@@ -93,13 +108,13 @@
                 <a href="#"><button class="arrowBTN"></button></a>
             </div>
             <div class="box5">
-                
             </div>
             <div class="box6">
-                A redesign of energy.gov with applied user research to enhance the overall user experiences and interface design.  
+                A redesign of energy.gov with applied user research to enhance the overall user experiences and
+                interface design.
             </div>
         </div>
-    <!-- PIF -->
+        <!-- PIF -->
         <div class="pifWrapper">
             <div class="box1">
                 <img src="images/pif.png" alt="pifimage" class="">
@@ -114,13 +129,13 @@
                 <a href="#"><button class="arrowBTN"></button></a>
             </div>
             <div class="box5">
-                
             </div>
             <div class="box6">
-                Non-Profit redesign geared to encourage people to donate musical instruments to students aspiring to learn.
+                Non-Profit redesign geared to encourage people to donate musical instruments to students aspiring to
+                learn.
             </div>
         </div>
-    <!-- MOMENTUM -->
+        <!-- MOMENTUM -->
         <div class="momentumWrapper">
             <div class="box1">
                 <img src="images/momentum.png" alt="momentumimage" class="">
@@ -135,13 +150,13 @@
                 <a href="#"><button class="arrowBTN"></button></a>
             </div>
             <div class="box5">
-                
             </div>
             <div class="box6">
-                A business mentor application geared towards new business owners who seek knowlagable mentors to help them overcome the struggles of starting a business. 
+                A business mentor application geared towards new business owners who seek knowlagable mentors to help
+                them overcome the struggles of starting a business.
             </div>
         </div>
-    <!-- MUNCH -->
+        <!-- MUNCH -->
         <div class="munchWrapper">
             <div class="box1">
                 <img src="images/munch.png" alt="momentumimage" class="">
@@ -158,49 +173,60 @@
             <div class="box5"></div>
             <div class="box6">
                 Food discovery / travel application prototype that helps travelers find great food without the hassle.
-
             </div>
         </div>
     </section>
 
-<!-- CONTACT LINK & UP  -->
+    <!-- CONTACT LINK & UP  -->
 
-<section class="bottomContainer">
-    <div class="bottomItems">
-        <div class="contactBTN">
-            <a href="#">Lets Chat
-                <img class="arrow" src="images/arrow.svg" alt="arrowvector">
-            </a>
+<div class="footer-box">
+    <section class="bottomContainer">
+        <div class="bottomItems">
+            <div class="contactBTN">
+                <a href="#">Lets Chat
+                    <img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector">
+                </a>
+            </div>
+            <div class="top">
+                <a href="#"> Up
+                    <img class="uparrow" src="images/blue-arrow-up.svg" alt="uparrowvector">
+                </a>
+            </div>
         </div>
-        <div class="top">
-            <a href="#"> Up
-                <img class="uparrow" src="images/uparrow.svg" alt="uparrowvector">
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
+
 
 <!-- FOOTER -->
-
-<div class="lineContainer">
-    <div class="footerDivider"></div>
+    <div class="lineContainer">
+        <div class="footerDivider"></div>
+    </div>
+    <footer class="footerContainer">
+        <div class="social">
+            <a href="#">linkedin
+                <img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector">
+            </a>
+        </div>
+        <ul class="footerItems">
+            <li>jakedesign.io</li>
+            <li>•</li>
+            <li>2021</li>
+            <li>•</li>
+            <li>self coded</li>
+        </ul>
+    </footer>
 </div>
 
-<footer class="footerContainer">
-    <div class="social">
-        <a href="#">linkedin 
-            <img class="arrow" src="images/arrow.svg" alt="arrowvector">
-        </a>
+<!-- BOTTOM BAR -->
+    <div class="bottom-bar">
+        <div class="bar">
+            <p>hello &#128075 you've reached the bottom of the page</p>
+        </div>
     </div>
-    <ul class="footerItems">
-        <li>jakedesign.io</li>
-        <li>•</li>
-        <li>2021</li>
-        <li>•</li>
-        <li>self coded</li>
-    </ul>
-</footer>
 
-<script src="javascript/cursor.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/cursor.js"></script>
 </body>
+
 </html>
