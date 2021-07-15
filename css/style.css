@@ -270,7 +270,7 @@ li.dropdown {
 }
 
 .hero .name {
-    font-size: 68px;
+    font-size: 66px;
     margin: 0;
     margin-top: -25px;
     margin-bottom: 0.5vh;;
@@ -304,7 +304,7 @@ li.dropdown {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 66% 34%;
+    grid-template-columns: 67% 33%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -616,50 +616,119 @@ footer {
     display: none;
 }
 
-
-@media screen and (max-width: 1385px) {
+@media screen and (max-width: 1399px) {
     .hero h1 {
-        font-size: 48px;
+        font-size: 128px;
+        margin-top: 8vh;
+        margin-left: -7px;
+    }
+    .hero .name {
+        font-size: 66px;
     }
     .heroText p {
-        max-width: 760px;
+        max-width: 880px;
+        font-size: 24px;
     }
     .jakeEmoji {
-        height: 310px;
-        width: 310px;
-        margin-top: 13vh;
+        height: 360px;
+        width: 360px;
+        margin-top: 12vh;
+        background-position: 38px 28px;
+        background-size: 325px;
+    }
+}
+@media screen and (max-width: 1359px) {
+    .hero h1 {
+        font-size: 119px;
+    }
+    .hero .name {
+        font-size: 64px;
+    }
+    .heroText p {
+        max-width: 850px;
+    }
+    .jakeEmoji {
+        height: 350px;
+        width: 350px;
+        margin-top: 8vh;
         background-position: 36px 30px;
-        background-size: 275px;
+        background-size: 310px;
     }
 }
-@media screen and (max-width: 1192px) {
+@media screen and (max-width: 1309px) {
     .hero h1 {
-        font-size: 43px;
+        font-size: 107px;
+        margin-left: -5px;
+    }
+    .hero .name {
+        font-size: 60px;
     }
     .heroText p {
-        max-width: 650px;
-        font-size: 25px;
+        max-width: 770px;
     }
     .jakeEmoji {
-        height: 300px;
-        width: 300px;
-        margin-top: 14vh;
-        background-position: 42px 32px;
-        background-size: 255px;
+        height: 330px;
+        width: 330px;
+        margin-top: 8vh;
+        background-position: 36px 30px;
+        background-size: 290px;
     }
 }
-@media screen and (max-width: 1072px) {
+@media screen and (max-width: 1223px) {
     .hero h1 {
-        font-size: 38px;
+        font-size: 100px;
+        margin-left: -4px;
+    }
+    .hero .name {
+        font-size: 54px;
     }
     .heroText p {
-        max-width: 622px;
-        font-size: 22px;
+        max-width: 770px;
     }
     .jakeEmoji {
-        height: 260px;
-        width: 260px;
-        margin-top: 14vh;
+        height: 320px;
+        width: 330px;
+        margin-top: 7vh;
+        background-position: 36px 30px;
+        background-size: 290px;
+    }
+}
+@media screen and (max-width: 1115px) {
+    .hero h1 {
+        font-size: 90px;
+        margin-left: -4px;
+    }
+    .hero .name {
+        font-size: 50px;
+    }
+    .heroText p {
+        max-width: 680px;
+        font-size: 23px;
+    }
+    .jakeEmoji {
+        height: 280px;
+        width: 280px;
+        margin-top: 9vh;
+        background-position: 30px 25px;
+        background-size: 249px;
+    }
+}
+@media screen and (max-width: 1029px) {
+    .hero h1 {
+        font-size: 85px;
+        margin-left: -3px;
+    }
+    .hero .name {
+        font-size: 45px;
+    }
+    .heroText p {
+        max-width: 680px;
+        font-size: 23px;
+    }
+    .jakeEmoji {
+        height: 270px;
+        width: 270px;
+        margin-top: 9vh;
         background-position: 30px 22px;
         background-size: 235px;
     }
