@@ -21,11 +21,12 @@ const navSlide = () => {
 
 navSlide();
 
-$(".btnPrimary").mouseenter(function(){
-    $(".hero-statement").html("creator ✍🏽  designer 🎨 plant dad 🪴 snowbarder 🏂 music connoisseur 🎵 pnw wanderer🌲 wood worker 🪚 oatmilk lattes ☕️ beliver in aliens 👽 🖖🏽 and continually working to sharpen my craft!");
+$(".btnPrimary").mouseenter(function() {
+    $(".hero-statement").text("creator ✍🏽  designer 🎨 plant dad 🪴 snowboarder 🏂 music connoisseur 🎵 pnw wanderer🌲 wood worker 🪚 oatmilk lattes ☕️ beliver in aliens 👽 🖖🏽 and continually working to sharpen my craft!").delay(7500).fadeIn(3000);
+
 })
 
-.mouseleave(function(){
-    $(".hero-statement").html("A budding UX/UI designer with a passion for using his brain cells &#129504 to create design experiences that are meaningful, intuitive, and purposeful!");
+.mouseleave(function() {
+    $(".hero-statement").text("A budding UX/UI designer with a passion for using his brain cells 🧠 to create design experiences that are meaningful, intuitive, and purposeful!");
 })
 

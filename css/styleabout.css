@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
     cursor: none;
 }
 
@@ -35,8 +35,9 @@ img {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
     padding-top: 20px;
+    
 }
 
 .cursor {
@@ -81,9 +82,11 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/jakedesign-underline.svg);
+    background-image: url(../images/nav-underline-tan.svg);
     background-repeat: no-repeat;
-    background-position: 4px 30px;
+    background-size: 120px;
+    background-position: 8px 30px;
+    
 }
 
 .nav-links li {
@@ -104,7 +107,7 @@ nav {
     font-weight: 400;
     font-size: 18px;
     cursor: none;
-    padding: 10px;
+    padding: 9px;
 }
 
 .nav-links .arrow {
@@ -129,7 +132,7 @@ nav {
 
 .nav-links .tweak:hover {
     transform: rotate(-5deg);
-    background-image: url(../images/aboutme-underline.svg);
+    background-image: url(../images/nav-underline-tan.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
@@ -258,36 +261,95 @@ li.dropdown {
     }
 }
 
-/* COMING SOON PAGE */
+/* ABOUT ME */
 
-h1 {
-    display: flex;
+.aboutme-container {
+    position: relative;
+    min-height: 100%;
+    max-width: 1400px;
     margin: 0 auto;
-    justify-content: center;
-    padding-top: 25vh;
-    font-size: 5vw;
-    font-weight: 400;
-    color: #375BBB;
+    padding: 0 20px;
+    margin-top: 6vh;
 }
 
-h2 {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 1vh;
-    font-size: 3vw;
-    font-weight: 400;
-    color: #375BBB;
+.aboutme-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
-h3 {
-    display: flex;
-    margin: 0 auto;
+.about-box2 {
+    background-image: url(../images/jake-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     justify-content: center;
-    padding-top: 1vh;
-    font-size: 2vw;
+    
+}
+
+.about-box1 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.about-box1 h1 {
+    font-size: 50px;
     font-weight: 400;
-    color: #375BBB; 
+    color: #375BBB;
+    margin: 0;
+}
+
+.about-box1 p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #375BBB;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 1.6;
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 8vh;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: vh;
+}
+
+.content-grid h1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #375BBB;
+    padding-bottom: 1vh;
+}
+
+.content-grid p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #375BBB;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.content-box3 h1 {
+    padding-left: 80px;
+}
+
+.content-box3 p {
+    padding-left: 80px;
+}
+
+
+.content-box3 .arrow {
+    width: 16px;
+    padding-left: 8px;
+    margin-bottom: -2px;
 }
 
 /* FOOTER BOX */
@@ -296,7 +358,7 @@ h3 {
     background-color: #D0CDCB;
     padding-top: 3vh;
     padding-bottom: 4vh;
-    margin-top: 15vh;
+    margin-top: 13vh;
 }
 
 /* CONTACT LINK & UP */
