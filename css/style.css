@@ -276,6 +276,12 @@ li.dropdown {
     margin-bottom: 0.5vh;;
 }
 
+.fixed-container {
+    display: table;
+    height: 190px;
+    width: 100%;
+}
+
 .heroText p {
     max-width: 880px;
     font-size: 25px;
