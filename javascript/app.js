@@ -22,7 +22,7 @@ const navSlide = () => {
 navSlide();
 
 $(".btnPrimary").mouseenter(function() {
-    $(".hero-statement").text("creator ✍🏽  designer 🎨 plant dad 🪴 snowboarder 🏂 music connoisseur 🎵 pnw wanderer🌲 wood worker 🪚 oatmilk lattes ☕️ beliver in aliens 👽 🖖🏽 and continually working to sharpen my craft!").delay(7500).fadeIn(3000);
+    $(".hero-statement").text("creator ✍🏽  designer 🎨 plant dad 🌱 snowboarder 🏂 music connoisseur 🎵 pnw wanderer🌲 wood worker 📐 oatmilk lattes ☕️ beliver in aliens 👽 and continually working to sharpen my craft");
 
 })
 

@@ -28,7 +28,7 @@ img {
 }
 
 .landing-box {
-    background-color:#D0CDCB;
+    background-color: #D0CDCB;
     height: 100vh;
 }
 
@@ -83,7 +83,8 @@ nav {
 .logo .tweak:hover {
     background-image: url(../images/jakedesign-underline.svg);
     background-repeat: no-repeat;
-    background-position: 4px 30px;
+    background-size: 120px;
+    background-position: 6px 32px;
 }
 
 .nav-links li {
@@ -129,7 +130,7 @@ nav {
 
 .nav-links .tweak:hover {
     transform: rotate(-5deg);
-    background-image: url(../images/aboutme-underline.svg);
+    background-image: url(../images/jakedesign-underline.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
@@ -289,6 +290,12 @@ li.dropdown {
     color: #375BBB;
     line-height: 1.8;
     margin: 0;
+}
+
+.hero-statement .brain {
+    position: relative;
+    display: block;
+    margin: 0%;
 }
 
 .jakeEmoji {

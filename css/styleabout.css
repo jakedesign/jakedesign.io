@@ -160,18 +160,19 @@ li.dropdown {
 }
 
 .dropdownContent a {
-    color: #D0CDCB;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 300;
-    padding: 15px 15px;
+    padding: 15px 19px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
 .dropdownContent a:hover {
-    background-color: #f1f1f1;
+    background-color: #D0CDCB;
     color: #375BBB;
+    font-weight: 400;
 }
 
 .dropdown:hover .dropdownContent {
