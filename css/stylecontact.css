@@ -81,9 +81,10 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/jakedesign-underline.svg);
+    background-image: url(../images/underline-tan-straight.svg);
     background-repeat: no-repeat;
-    background-position: 4px 30px;
+    background-position: 9px 30px;
+    background-size: 115px;
 }
 
 .nav-links li {
@@ -129,7 +130,7 @@ nav {
 
 .nav-links .tweak:hover {
     transform: rotate(-5deg);
-    background-image: url(../images/aboutme-underline.svg);
+    background-image: url(../images/underline-tan-angle.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
@@ -258,27 +259,103 @@ li.dropdown {
     }
 }
 
-/* COMING SOON PAGE */
+/* SAY HELLO */
 
-h1 {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 25vh;
-    font-size: 5vw;
-    font-weight: 400;
-    color: #375BBB;
+.contact-container {
+    max-width: 1400px;
+    margin: 0px auto;
+    overflow: auto;
+    padding: 0 20px;
 }
 
-h2 {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 1vh;
-    font-size: 3vw;
+.contact-grid {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "hi pc"
+    "em pc";
+    margin-top: 16vh;
+    margin-bottom: 9vh;
+}
+
+.contactbox-1 {
+    grid-area: hi;
+    display: grid;
+    justify-items:right;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+.contactbox-2 {
+    grid-area: em;
+    display: grid;
+    justify-items: right;
+    padding-right: 50px;
+}
+.contactbox-3 {
+    grid-area: pc;
+    border-radius: 50%;
+    border: 2px solid #375BBB;
+    height: 400px;
+    width: 400px;
+    background-image: url(../images/emoji_thumbs.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contactbox-1 h1 {
+    font-size: 90px;
     font-weight: 400;
     color: #375BBB;
+    margin: 0;
 }
+
+.contactbox-2 a {
+    font-size: 20px;
+    font-weight: 400px;
+    padding-bottom: 20px;
+}
+
+.contactbox-2 .arrow {
+    width: 14px;
+    padding-left: 6px;
+}
+
+.contactbox-2 a {
+    transition: 0.3s;
+}
+
+.contactbox-2 a:hover {
+    background-image: url(../images/underline-tan-straight.svg);
+    background-repeat: no-repeat;
+    background-position: 0 27px;
+    background-size: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER BOX */
 

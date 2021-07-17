@@ -82,7 +82,7 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/nav-underline-tan.svg);
+    background-image: url(../images/underline-tan-straight.svg);
     background-repeat: no-repeat;
     background-size: 120px;
     background-position: 8px 30px;
@@ -132,7 +132,7 @@ nav {
 
 .nav-links .tweak:hover {
     transform: rotate(-5deg);
-    background-image: url(../images/nav-underline-tan.svg);
+    background-image: url(../images/underline-tan-angle.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
