@@ -748,39 +748,50 @@ footer {
 }
 @media screen and (max-width: 952px) {
     .hero h1 {
-        font-size: 34px;
+        font-size: 84px;
+        margin-left: -2;
+        padding-bottom: 3px;
+    }
+    .hero .name {
+        font-size: 40px;
     }
     .heroText p {
         max-width: 530px;
         font-size: 21px;
     }
     .jakeEmoji {
-        height: 260px;
-        width: 260px;
-        margin-top: 14vh;
+        height: 268px;
+        width: 268px;
+        margin-top: 9vh;
         background-position: 30px 22px;
         background-size: 235px;
     }
 }
 @media screen and (max-width: 856px) {
     .hero h1 {
-        font-size: 30px;
+        font-size: 84px;
+    }
+    .hero .name {
+        font-size: 38px;
     }
     .heroText p {
         max-width: 490px;
         font-size: 20px;
     }
     .jakeEmoji {
-        height: 240px;
-        width: 240px;
-        margin-top: 12vh;
-        background-position: 27px 19px;
+        height: 257px;
+        width: 257px;
+        margin-top: 10vh;
+        background-position: 29px 29px;
         background-size: 215px;
     }
 }
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 781px) {
     .hero h1 {
-        font-size: 29px;
+        font-size: 83px;
+    }
+    .hero .name {
+        font-size: 33px;
     }
     .heroText p {
         max-width: 460px;
@@ -893,8 +904,8 @@ footer {
         padding-bottom: 10px;
     }
     .top-box {
-        margin-top: 6vh;
-        margin-bottom: 3vh;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
         height: 80px;
     }
     .btnSecondary {
@@ -906,20 +917,30 @@ footer {
     .scroll-prompt {
         font-size: 16px;
     }
+    .fixed-container {
+        display: table;
+        height: 80px;
+        width: 100%;
+    }
+    .scroll-prompt {
+        padding-bottom: 10px;
+        width: 30px;
+    }
 }
 @media screen and (max-width: 513px) {
     .heroText p {
-        font-size: 19px;
+        font-size: 19px;   
     }
     .mobile-header h2 {
         font-size: 80px;
+        margin-left: -2px;
     }
     .mobile-header h3 {
         font-size: 31px;
     }
     .top-box {
-        margin-top: 7vh;
-        margin-bottom: 4vh;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
         height: 75px;
     }
     .btnSecondary {
@@ -928,11 +949,21 @@ footer {
     .buttonContainer {
         margin-top: 2vh;
     }
+    .fixed-container {
+        display: table;
+        height: 100px;
+        width: 100%;
+    }
+    .scroll-prompt {
+        padding-bottom: 10px;
+        width: 30px;
+    }
 }
+
 @media screen and (max-width: 443px) {
     .heroText p {
         font-size: 18px;
-        margin-bottom: 1vh;
+        padding-bottom: 1vh;
     }
     .mobile-header h2 {
         font-size: 70px;
@@ -941,40 +972,24 @@ footer {
         font-size: 28px;
     }
     .top-box {
-        margin-top: 4vh;
-        margin-bottom: 3vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
         height: 69px;
     }
     .btnSecondary {
         padding: 15px 145px;
     }
     .buttonContainer {
-        margin-top: 0vh;
-        margin: 0;
-        padding: 0;
+        margin-top: 2vh;
     }
-}
-@media screen and (max-width: 443px) {
-    .heroText p {
-        font-size: 18px;
-        padding-bottom: 2vh;
+    .fixed-container {
+        display: table;
+        height: 110px;
+        width: 100%;
     }
-    .mobile-header h2 {
-        font-size: 70px;
-    }
-    .mobile-header h3 {
-        font-size: 28px;
-    }
-    .top-box {
-        margin-top: 6vh;
-        margin-bottom: 5vh;
-        height: 69px;
-    }
-    .btnSecondary {
-        padding: 15px 145px;
-    }
-    .buttonContainer {
-        margin-top: 4vh;
+    .scroll-prompt {
+        padding-bottom: 10px;
+        width: 30px;
     }
 }
 @media screen and (max-width: 404px) {
