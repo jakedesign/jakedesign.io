@@ -87,7 +87,7 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/jakedesign-underline.svg);
+    background-image: url(../images/u);
     background-repeat: no-repeat;
     background-position: 4px 30px;
 }
@@ -266,7 +266,6 @@ li.dropdown {
 
 /* COMING SOON PAGE */
 
-<<<<<<< HEAD
 .contact-container {
     max-width: 1400px;
     margin: 0px auto;
@@ -291,7 +290,10 @@ li.dropdown {
     justify-items:right;
     align-items: flex-end;
     padding-right: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
 .contactbox-2 {
     grid-area: em;
     display: grid;
@@ -299,6 +301,19 @@ li.dropdown {
     padding-right: 50px;
     align-items:flex-start;
 }
+
+.contactbox-2 a {
+    font-size: 20px;
+    font-weight: 400px;
+    padding-bottom: 20px;
+}
+
+.contactbox-2 .arrow {
+    width: 14px;
+    padding-left: 6px;
+}
+
+
 .contactbox-3 {
     grid-area: pc;
     border-radius: 50%;
@@ -312,42 +327,11 @@ li.dropdown {
 
 .contactbox-1 h1 {
     font-size: 90px;
-=======
-h1 {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 25vh;
-    font-size: 5vw;
->>>>>>> parent of c0650e7 (small tweaks)
     font-weight: 400;
     color: #375BBB;
+    margin: 0;
 }
 
-<<<<<<< HEAD
-.contactbox-2 a {
-    font-size: 20px;
-    font-weight: 400px;
-    padding-bottom: 20px;
-    
-}
-
-.contactbox-2 .arrow {
-    width: 14px;
-    padding-left: 6px;
-}
-
-.contactbox-2 a {
-    transition: 0.3s;
-    cursor: url('../images/cursor-blackdot.svg'), auto;
-}
-
-.contactbox-2 a:hover {
-    background-image: url(../images/underline-tan-straight.svg);
-    background-repeat: no-repeat;
-    background-position: 0 27px;
-    background-size: 220px;
-=======
 h2 {
     display: flex;
     margin: 0 auto;
@@ -356,8 +340,21 @@ h2 {
     font-size: 3vw;
     font-weight: 400;
     color: #375BBB;
->>>>>>> parent of c0650e7 (small tweaks)
 }
+
+.contactbox-2 a {
+    transition: 0.5s;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.contactbox-2 a:hover {
+    background-image: url(../images/underline-tan-straight.svg);
+    background-color: rgba(134, 185, 185, 0.472);
+    background-repeat: no-repeat;
+    background-position: 0 27px;
+    background-size: 220px;
+}
+
 
 /* FOOTER BOX */
 
