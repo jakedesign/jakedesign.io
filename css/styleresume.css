@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     background-color: whitesmoke;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 ul {
@@ -40,18 +40,22 @@ img {
 }
 
 .cursor {
-    width: 0.8rem;
-    height: 0.8rem;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 50%;
     position: absolute;
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid black;
     transform: translate(-50%, -50%);
+    z-index: 5;
     pointer-events: none;
-    z-index: 3;
-    background-color: rgb(0, 0, 0);
-    /* backdrop-filter: invert(100%);  */
+    transition: all 0.5s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
 }
 
+.link-grow{
+    transform: scale(2);
+}
 /* NAV */
 
 nav {
@@ -72,7 +76,7 @@ nav {
 .logo a {
     text-decoration: none;
     list-style: none;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
     padding: 10px;
 }
 
@@ -84,7 +88,7 @@ nav {
     background-image: url(../images/underline-tan-straight.svg);
     background-repeat: no-repeat;
     background-size: 120px;
-    background-position: 7px 30px;
+    background-position: 7px 34px;
 }
 
 .nav-links li {
@@ -104,7 +108,7 @@ nav {
     color: #375BBB;
     font-weight: 400;
     font-size: 18px;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
     padding: 10px;
 }
 
@@ -494,17 +498,6 @@ li.dropdown {
     padding-top: 27px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER BOX */
 
 .footer-box {
@@ -547,7 +540,7 @@ li.dropdown {
 }
 
 .bottomItems a {
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 /* FOOTER */
@@ -600,7 +593,7 @@ footer {
 }
 
 .social a {
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 .social .arrow {
@@ -625,4 +618,35 @@ footer {
     font-size: 18px;
     color: #D0CDCB;
     font-weight: 300;
+}
+
+/* PAGE LINK TWEAKS */
+
+.footerContainer .social {
+    transition: 0.3s;
+}
+
+.footerContainer .social:hover {
+    transform: rotate(-6deg);
+}
+
+.bottomItems .contactBTN {
+    transition: 0.3s;
+}
+
+.bottomItems .contactBTN:hover {
+    transform: rotate(-6deg);
+}
+
+.bottomItems .top {
+    transition: 0.5s ease;
+}
+
+.bottomItems .top:hover {
+    transform: rotate(-360deg);
+}
+
+.bottomItems a {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

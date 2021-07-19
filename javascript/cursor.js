@@ -1,5 +1,5 @@
 let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll('.nav-links li, .logo, .btnPrimary, .arrowBTN, .bottomItems a, .social a');
+let navLinks = document.querySelectorAll('.nav-links li, .logo, .btnPrimary, .arrowBTN, .bottomItems a, .social a, .content-box3 a, .contactbox-2 a');
 
 window.addEventListener('mousemove',cursor);
 

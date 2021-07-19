@@ -6,8 +6,8 @@ body {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-    cursor: none;
+    background-color: whitesmoke;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 ul {
@@ -40,16 +40,21 @@ img {
 }
 
 .cursor {
-    width: 0.8rem;
-    height: 0.8rem;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 50%;
     position: absolute;
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid black;
     transform: translate(-50%, -50%);
+    z-index: 5;
     pointer-events: none;
-    z-index: 3;
-    background-color: rgb(0, 0, 0);
-    /* backdrop-filter: invert(100%);  */
+    transition: all 0.5s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+}
+
+.link-grow{
+    transform: scale(2);
 }
 
 /* NAV */
@@ -72,7 +77,7 @@ nav {
 .logo a {
     text-decoration: none;
     list-style: none;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
     padding: 10px;
 }
 
@@ -83,7 +88,7 @@ nav {
 .logo .tweak:hover {
     background-image: url(../images/underline-tan-straight.svg);
     background-repeat: no-repeat;
-    background-position: 9px 30px;
+    background-position: 9px 34px;
     background-size: 115px;
 }
 
@@ -104,7 +109,7 @@ nav {
     color: #375BBB;
     font-weight: 400;
     font-size: 18px;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
     padding: 10px;
 }
 
@@ -292,6 +297,7 @@ li.dropdown {
     justify-items: right;
     padding-right: 50px;
 }
+
 .contactbox-3 {
     grid-area: pc;
     border-radius: 50%;
@@ -314,6 +320,7 @@ li.dropdown {
     font-size: 20px;
     font-weight: 400px;
     padding-bottom: 20px;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 .contactbox-2 .arrow {
@@ -331,31 +338,6 @@ li.dropdown {
     background-position: 0 27px;
     background-size: 220px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* FOOTER BOX */
 
@@ -399,7 +381,7 @@ li.dropdown {
 }
 
 .bottomItems a {
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 /* FOOTER */
@@ -452,7 +434,7 @@ footer {
 }
 
 .social a {
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 .social .arrow {
@@ -477,4 +459,35 @@ footer {
     font-size: 18px;
     color: #D0CDCB;
     font-weight: 300;
+}
+
+/* PAGE LINK TWEAKS */
+
+.footerContainer .social {
+    transition: 0.3s;
+}
+
+.footerContainer .social:hover {
+    transform: rotate(-5deg);
+}
+
+.bottomItems .contactBTN {
+    transition: 0.3s;
+}
+
+.bottomItems .contactBTN:hover {
+    transform: rotate(-5deg);
+}
+
+.bottomItems .top {
+    transition: 0.5s ease;
+}
+
+.bottomItems .top:hover {
+    transform: rotate(-360deg);
+}
+
+.bottomItems a {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
