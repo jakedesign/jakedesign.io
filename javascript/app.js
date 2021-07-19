@@ -23,10 +23,10 @@ const navSlide = () => {
 
 navSlide();
 
+
 $(".btnPrimary").mouseenter(function() {
     $(".hero-statement").text("creator ✍🏽  designer 🎨 plant dad 🌱 snowboarder 🏂 music connoisseur 🎵 pnw wanderer🌲 wood worker 📐 oatmilk lattes ☕️ beliver in aliens 👽 and continually working to sharpen my craft");
 })
-
 .mouseleave(function() {
     $(".hero-statement").text("A budding UX/UI designer with a passion for using his brain cells 🧠 to create design experiences that are meaningful, intuitive, and purposeful!");
 })

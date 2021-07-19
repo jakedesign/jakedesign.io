@@ -87,10 +87,9 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/underline-tan-straight.svg);
+    background-image: url(../images/jakedesign-underline.svg);
     background-repeat: no-repeat;
-    background-position: 9px 30px;
-    background-size: 115px;
+    background-position: 4px 30px;
 }
 
 .nav-links li {
@@ -136,7 +135,7 @@ nav {
 
 .nav-links .tweak:hover {
     transform: rotate(-5deg);
-    background-image: url(../images/underline-tan-angle.svg);
+    background-image: url(../images/aboutme-underline.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
@@ -265,8 +264,9 @@ li.dropdown {
     }
 }
 
-/* SAY HELLO */
+/* COMING SOON PAGE */
 
+<<<<<<< HEAD
 .contact-container {
     max-width: 1400px;
     margin: 0px auto;
@@ -312,11 +312,19 @@ li.dropdown {
 
 .contactbox-1 h1 {
     font-size: 90px;
+=======
+h1 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 25vh;
+    font-size: 5vw;
+>>>>>>> parent of c0650e7 (small tweaks)
     font-weight: 400;
     color: #375BBB;
-    margin: 0;
 }
 
+<<<<<<< HEAD
 .contactbox-2 a {
     font-size: 20px;
     font-weight: 400px;
@@ -339,6 +347,16 @@ li.dropdown {
     background-repeat: no-repeat;
     background-position: 0 27px;
     background-size: 220px;
+=======
+h2 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 1vh;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #375BBB;
+>>>>>>> parent of c0650e7 (small tweaks)
 }
 
 /* FOOTER BOX */

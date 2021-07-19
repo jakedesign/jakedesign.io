@@ -86,10 +86,10 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/underline-tan-straight.svg);
+    background-image: url(../images/nav-underline-tan.svg);
     background-repeat: no-repeat;
     background-size: 120px;
-    background-position: 7px 30px;
+    background-position: 6px 32px;
 }
 
 .nav-links li {
@@ -135,7 +135,7 @@ nav {
 
 .nav-links .tweak:hover {
     transform: rotate(-5deg);
-    background-image: url(../images/underline-tan-angle.svg);
+    background-image: url(../images/nav-underline-tan.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
@@ -305,12 +305,12 @@ li.dropdown {
         "b1 c1 c2 c3";
 }
 
+
 .header {
     grid-area: hd;
     border-bottom: 2px solid #375BBB;
     margin-bottom: 25px;
 }
-
 .blank {
     grid-area: b1;
 }
