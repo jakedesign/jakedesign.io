@@ -3,6 +3,8 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
     
+    const swup = new Swup()
+
     burger.addEventListener('click',() => {
     //Toggle Nav
     nav.classList.toggle('nav-active');
@@ -23,7 +25,6 @@ navSlide();
 
 $(".btnPrimary").mouseenter(function() {
     $(".hero-statement").text("creator ✍🏽  designer 🎨 plant dad 🌱 snowboarder 🏂 music connoisseur 🎵 pnw wanderer🌲 wood worker 📐 oatmilk lattes ☕️ beliver in aliens 👽 and continually working to sharpen my craft");
-
 })
 
 .mouseleave(function() {

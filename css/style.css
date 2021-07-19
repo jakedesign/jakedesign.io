@@ -57,9 +57,6 @@ img {
     transform: scale(2);
 }
 
-
-
-
 /* NAV */
 
 nav {
@@ -528,6 +525,8 @@ li.dropdown {
     justify-content: space-between;
     font-size: 25px;
     color: #375BBB;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .bottomItems .arrow {
@@ -542,6 +541,22 @@ li.dropdown {
 
 .bottomItems a {
     cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.bottomItems .contactBTN {
+    transition: 0.3s;
+}
+
+.bottomItems .contactBTN:hover {
+    transform: rotate(-5deg);
+}
+
+.bottomItems .top {
+    transition: 0.5s;
+}
+
+.bottomItems .top:hover {
+    transform: rotate(-360deg);
 }
 
 /* FOOTER */
@@ -591,10 +606,15 @@ footer {
     font-size: 18px;
     font-weight: 400;
     color: #375BBB;
+    transition: 0.3s;
 }
 
 .social a {
     cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.social:hover {
+    transform: rotate(-6deg);
 }
 
 .social .arrow {

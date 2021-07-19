@@ -7,7 +7,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     background-color: whitesmoke;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
 ul {
@@ -40,16 +40,21 @@ img {
 }
 
 .cursor {
-    width: 0.8rem;
-    height: 0.8rem;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 50%;
     position: absolute;
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid black;
     transform: translate(-50%, -50%);
+    z-index: 5;
     pointer-events: none;
-    z-index: 3;
-    background-color: rgb(0, 0, 0);
-    /* backdrop-filter: invert(100%);  */
+    transition: all 0.5s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+}
+
+.link-grow{
+    transform: scale(2);
 }
 
 /* NAV */
@@ -72,7 +77,7 @@ nav {
 .logo a {
     text-decoration: none;
     list-style: none;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
     padding: 10px;
 }
 
@@ -104,7 +109,7 @@ nav {
     color: #375BBB;
     font-weight: 400;
     font-size: 18px;
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
     padding: 10px;
 }
 
@@ -534,6 +539,8 @@ li.dropdown {
     justify-content: space-between;
     font-size: 25px;
     color: #375BBB;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .bottomItems .arrow {
@@ -547,7 +554,23 @@ li.dropdown {
 }
 
 .bottomItems a {
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.bottomItems .contactBTN {
+    transition: 0.3s;
+}
+
+.bottomItems .contactBTN:hover {
+    transform: rotate(-5deg);
+}
+
+.bottomItems .top {
+    transition: 0.5s;
+}
+
+.bottomItems .top:hover {
+    transform: rotate(-360deg);
 }
 
 /* FOOTER */
@@ -597,10 +620,15 @@ footer {
     font-size: 18px;
     font-weight: 400;
     color: #375BBB;
+    transition: 0.3s;
 }
 
 .social a {
-    cursor: none;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.social:hover {
+    transform: rotate(-6deg);
 }
 
 .social .arrow {
