@@ -354,7 +354,7 @@ li.dropdown {
 
 .hoverButton :hover {
     background-color: #375BBB;
-    color: #D0CDCB;
+    color: #e7e5e5;
 }
 
 .button-lineDivider { 
@@ -499,7 +499,7 @@ li.dropdown {
 /* FOOTER BOX */
 
 .footer-box {
-    background-color: #D0CDCB;
+    background-color: #e7e5e5;
     padding-top: 3vh;
     padding-bottom: 4vh;
     margin-top: 15vh;
@@ -614,7 +614,7 @@ footer {
 
 .bar p {
     font-size: 18px;
-    color: #D0CDCB;
+    color: #e7e5e5;
     font-weight: 300;
 }
 

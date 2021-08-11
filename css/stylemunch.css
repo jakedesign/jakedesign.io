@@ -27,11 +27,6 @@ img {
     width: 100%;
 }
 
-.landing-box {
-    background-color:#D0CDCB;
-    height: 100vh;
-}
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -73,7 +68,7 @@ nav {
     text-decoration: none;
     list-style: none;
     cursor: none;
-    padding: 10px;
+    
 }
 
 .logo .tweak {
@@ -258,27 +253,90 @@ li.dropdown {
     }
 }
 
-/* COMING SOON PAGE */
 
-h1 {
+/* MUCH HEADER */
+
+.header-box {
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 25vh;
-    font-size: 5vw;
-    font-weight: 400;
-    color: #375BBB;
+    height: 500px;
+    margin-top: 70px;
 }
 
-h2 {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 1vh;
-    font-size: 3vw;
+.project-info {
+    width: 40%;
+}
+
+.project-info h1 {
+    font-size: 70px;
     font-weight: 400;
     color: #375BBB;
+    margin: 0 0 20px 0;
 }
+
+.project-info h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #375BBB;
+    margin: 0;
+    padding: 0;
+}
+.project-info p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #375BBB;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.project-img {
+    width: 60%;
+}
+
+hr {
+    height: 1px;
+    margin-top: 100px;
+    background-color: #375BBB;
+    width: 100%;
+}
+
+/* CASESTUDY*/
+
+.casestudy {
+    display: flex;
+    margin-top: 50px;
+}
+
+.casestudy-nav {
+    width: 20%;
+}
+
+.casestudy-nav li {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.casestudy-nav li:hover {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.casestudy-info {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER BOX */
 
