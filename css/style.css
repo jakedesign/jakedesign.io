@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
@@ -28,7 +28,7 @@ img {
 }
 
 .landing-box {
-    background-color: #e7e5e5;
+    background-color: #e6e6e6;
     height: 100vh;
 }
 
@@ -354,7 +354,7 @@ li.dropdown {
 
 .hoverButton :hover {
     background-color: #375BBB;
-    color: #e7e5e5;
+    color: #e6e6e6;
 }
 
 .button-lineDivider { 
@@ -499,7 +499,7 @@ li.dropdown {
 /* FOOTER BOX */
 
 .footer-box {
-    background-color: #e7e5e5;
+    background-color: #e6e6e6;
     padding-top: 3vh;
     padding-bottom: 4vh;
     margin-top: 15vh;
@@ -614,7 +614,7 @@ footer {
 
 .bar p {
     font-size: 18px;
-    color: #e7e5e5;
+    color: #e6e6e6;
     font-weight: 300;
 }
 

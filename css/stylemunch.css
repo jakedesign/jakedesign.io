@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
 body {
@@ -26,6 +26,8 @@ a {
 img {
     width: 100%;
 }
+
+
 
 .container {
     max-width: 1400px;
@@ -222,7 +224,7 @@ li.dropdown {
     .nav-links a {
         font-size: 25px;
         font-weight: 400;
-        color: #D0CDCB;
+        color: #e6e6e6;
     }
     .nav-links li:nth-child(4) {
         padding: 4vh 0 0 0;
@@ -293,26 +295,37 @@ li.dropdown {
 }
 
 hr {
-    height: 1px;
-    margin-top: 100px;
-    background-color: #375BBB;
+    border: 1px solid #375BBB;
+    margin-top: 50px;
     width: 100%;
 }
 
-/* CASESTUDY*/
+/* CASESTUDY */
 
 .casestudy {
     display: flex;
     margin-top: 50px;
+    position: relative;
 }
 
 .casestudy-nav {
     width: 20%;
 }
 
+.casestudy-info {
+    width: 80%;
+}
+
+.casestudy-nav ul {
+    position: sticky;
+    top: 60px;
+    padding-inline-start: 0px;
+}
+
 .casestudy-nav li {
     margin: 0 0 10px 0;
     font-size: 18px;
+    
 }
 
 .casestudy-nav li:hover {
@@ -321,30 +334,334 @@ hr {
     font-weight: 700;
 }
 
-.casestudy-info {
-    width: 80%;
+.casestudy-info h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    color: #375BBB;
 }
 
+.casestudy-info h2 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 300;
+    color: #375BBB; 
+    margin-top: 35px;
+}
 
+.casestudy-info h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    color: #375BBB;
+    margin-top: 35px;
+    line-height: 1.5;
+    background-color: rgba(39, 250, 162, 0.358);
+}
 
+.casestudy-info h4 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+    color: #375BBB;
+}
 
+.casestudy-info h5 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+    color: #375BBB;
+    margin-top: 20px;
+}
 
+.casestudy-info h6 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: #375BBB;
+}
 
+.casestudy-info li {
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #375BBB;
+    list-style-type: disc;
+    text-indent: -25px;
+    line-height: 1.5;
+    list-style-position: inside;
+}
 
+.casestudy-info p{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 300;
+    color: #375BBB;
+}
 
+.timeline {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
 
+.protopersona {
+    margin-top: 30px;
+    padding: 10px;
+}
 
+.indent {
+    padding-left: 22px;
+}
 
+.diag {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
+.diag p {
+    margin-left: 10px;
+}
 
+.diag-one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.diag-two {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.af-diag {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.e-map {
+    padding-top: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.likewishwhatif {
+    padding-top: 50px;
+}
+
+.featurepri {
+    padding-top: 50px;
+}
+
+.scenario {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.scen-one {
+    display: flex;
+    width: 50%;
+}
+
+.scen-one p{
+    margin-left: 20px;
+}
+
+.scen-two {
+    display: flex;
+    width: 50%;
+}
+
+.scen-two p{
+    margin-left: 20px;
+}
+
+.scen-three {
+    display: flex;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.scen-three p {
+    margin-left: 20px;
+}
+
+.scen-four {
+    display: flex;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.scen-four p {
+    margin-left: 20px;
+}
+
+.storyboard {
+    margin: 20px 0 70px 0;
+}
+
+.userflow {
+    padding: 30px 0 50px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.lofidesign {
+    margin: 30px 0 40px 0;
+}
+
+.sketches {
+    margin: 30px 0 40px 0;
+}
+
+.gplan {
+    margin-top: 40px;
+}
+
+.gplan h4 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.g1{
+    display: flex;
+    align-items: flex-start;
+}
+
+.ginfo1 {
+    margin-left: 38px;
+    margin-top: 0px;
+}
+
+.g2{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.ginfo2 {
+    margin-left: 20px;
+    
+}
+
+.g3{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.ginfo3 {
+    margin-left: 20px;
+}
+
+.g4{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.ginfo4 {
+    margin-left: 20px;
+}
+
+blockquote {
+    margin: 0 0 0 40px;
+}
+
+.steps {
+    display: flex;
+}
+
+.stepnum {
+    padding-left: 20px;
+}
+
+.vl {
+    height: 420px;
+    width: 1px;
+    border-left: 1px solid #375BBB;
+    margin: 20px 20px 0 10px;
+}
+
+.findings {
+    display: flex;
+    justify-content: space-between;
+}
+.finding-one {
+    display: flex;
+}
+.finding-two {
+    display: flex;
+}
+
+.name h5 {
+    padding-bottom: 15px;
+}
+
+.affdiag {
+    margin: 30px auto 50px 0px;
+    max-width: 900px;
+}
+
+.iterations {
+    margin: 30px auto 60px 0px;
+    max-width: 1000px;
+}
+
+.prototype {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 60px;
+    border: 1px solid #375BBB;
+    background-color: transparent;
+    color: #375BBB;
+    padding: 15px 100px;
+    font-size: 25px;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+}
+
+button:hover {
+    margin-top: 60px;
+    border: 1px solid #375BBB;
+    background-color: #375BBB;
+    color: #ffffff;
+    padding: 15px 100px;
+    font-size: 25px;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+}
+
+.proto-button .arrow {
+    width: 18px;
+    padding-left: 1px;
+}
 
 /* FOOTER BOX */
 
 .footer-box {
-    background-color: #D0CDCB;
+    background-color: #e6e6e6;
     padding-top: 3vh;
     padding-bottom: 4vh;
-    margin-top: 15vh;
+    margin-top: 8vh;
 }
 
 /* CONTACT LINK & UP */
@@ -456,6 +773,7 @@ footer {
 
 .bar p {
     font-size: 18px;
-    color: #D0CDCB;
+    color: #e6e6e6;
     font-weight: 300;
 }
+
