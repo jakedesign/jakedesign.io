@@ -6,45 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar_footer.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <title>jakedesin.io | home</title>
 </head>
 
 <body>
-    <div class="cursor"></div>
+<div class="cursor"></div>
+<div class="landing-box">
 
-    <div class="landing-box">
-        <div class="container">
-            <!-- NAV BAR -->
-            <nav>
+<!------------------------- NAV START ------------------------->
+<nav class="nav-container">
+    <div class="logo">
+        <a href="index.html">jakedesign.io</a>
+    </div>
+    <ul class="nav-links">
 
-                <div class="logo">
-                    <a href="index.html" class="tweak">jakedesign.io</a>
-                </div>
-                <ul class="nav-links">
-                    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn ">Work<img class="arrow1" src="images/blue-arrow-angle.svg" alt="arrowvector"></a>
+        <div class="dropdown"><a href="javascript:void(0)" class="dropbtn">Work<img class="arrow1" src="images/blue-arrow-angle.svg" alt="arrowvector"></a>
+            <div class="dropdownContent">
+                <a href="doe.html">Department Of Energy</a>
+                <a href="pif.html">Play It Forward</a>
+                <a href="momentum.html">Momentum</a>
+                <a href="munch.html">Munch</a>
+            </div>
+        </div>
 
-                        <div class="dropdownContent">
-                            <a href="doe.html">Department Of Energy</a>
-                            <a href="pif.html">Play It Forward</a>
-                            <a href="momentum.html">Momentum</a>
-                            <a href="munch.html">Munch</a>
-                        </div>
+        <li><a href="aboutme.html" class="tweak">About<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
+        <li><a href="resume.html" class="tweak">Resume<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
+        <li><a href="contact.html" class="tweak">Contact<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
+    </ul>
 
-                    </li>
-                    <li><a href="aboutme.html" class="tweak">About<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
-                    <li><a href="resume.html" class="tweak">Resume<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
-                    <li><a href="contact.html" class="tweak">Contact<img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector"></a></li>
-                </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
 
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
 
+<div class="container">
 
 <!-- HERO MOBILE -->
 <div class="mobile-header">
@@ -84,7 +85,7 @@
                 </div>
                 <div class="button-lineDivider"></div>
             </section>
-            <div class="scroll-prompt">
+            <div class="scroll-prompt bounce animated">
                 <img src="images/down-arrow.svg" alt="">
             </div>
         </div>
@@ -94,6 +95,25 @@
 <!-- PROJECT SHOWCASE GRID -->
         
     <section class="wrapperContainer">
+        <!-- MUNCH -->
+        <div class="munchWrapper">
+            <div class="box1">
+                <img src="images/munch-iphone.svg" alt="momentumimage" class="">
+            </div>
+            <div class="box2">
+                01.
+            </div>
+            <div class="box3">
+                Munch
+            </div>
+            <div class="box4-a">
+                <a href="munch.html"><button class="arrowBTN"></button></a>
+            </div>
+            <div class="box5"></div>
+            <div class="box6">
+                Food discovery / travel application prototype that helps travelers find great food without the hassle.
+            </div>
+        </div>
         <!-- DOE  -->
         <div class="doeWrapper">
             <div class="box1">
@@ -106,7 +126,7 @@
                 Department Of Energy
             </div>
             <div class="box4">
-                <a href="doe.html"><button class="arrowBTN"></button></a>
+                <a href=""><button class="arrowBTN2"></button></a>
             </div>
             <div class="box5">
             </div>
@@ -127,7 +147,7 @@
                 Play It Forward
             </div>
             <div class="box4">
-                <a href="pif.html"><button class="arrowBTN"></button></a>
+                <a href=""><button class="arrowBTN2"></button></a>
             </div>
             <div class="box5">
             </div>
@@ -148,7 +168,7 @@
                 Momentum
             </div>
             <div class="box4">
-                <a href="momentum.html"><button class="arrowBTN"></button></a>
+                <a href=""><button class="arrowBTN2"></button></a>
             </div>
             <div class="box5">
             </div>
@@ -157,73 +177,51 @@
                 them overcome the struggles of starting a business.
             </div>
         </div>
-        <!-- MUNCH -->
-        <div class="munchWrapper">
-            <div class="box1">
-                <img src="images/munch-iphone.svg" alt="momentumimage" class="">
-            </div>
-            <div class="box2">
-                04.
-            </div>
-            <div class="box3">
-                Munch
-            </div>
-            <div class="box4">
-                <a href="munch.html"><button class="arrowBTN"></button></a>
-            </div>
-            <div class="box5"></div>
-            <div class="box6">
-                Food discovery / travel application prototype that helps travelers find great food without the hassle.
-            </div>
-        </div>
+        
     </section>
 
-    <!-- CONTACT LINK & UP  -->
+<!------------------------- FOOTER START ------------------------->
+<footer>
+    <div class="foot-container">
+        <div class="topfoot">
 
-<div class="footer-box">
-    <section class="bottomContainer">
-        <div class="bottomItems">
-            <div class="contactBTN">
-                <a href="contact.html">Lets Chat
-                    <img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector">
-                </a>
+            <div class="hello">
+                <li><a href="contact.html">Say Hello
+                    <img src="images/blue-arrow-angle.svg" alt="arrowvector">
+                </a></li>
             </div>
-            <div class="top">
-                <a href="#"> Up
-                    <img class="uparrow" src="images/blue-arrow-up.svg" alt="uparrowvector">
-                </a>
+
+            <div class="up">
+                <li class="bounce animated"><a href="#">Up
+                    <img class="arrow" src="images/blue-arrow-up.svg" alt="arrowvector">
+                </a></li>
             </div>
+            
         </div>
-    </section>
 
+        <div class="h-line"></div>
 
-<!-- FOOTER -->
-    <div class="lineContainer">
-        <div class="footerDivider"></div>
-    </div>
-    <footer class="footerContainer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/jacobarmstead" target="_blank" rel="noopener noreferrer">linkedin
+        <div class="btmfoot">
+            <li class="linkedin"><a 
+                href="https://www.linkedin.com/in/jacobarmstead" 
+                target="_blank" rel="noopener noreferrer">
+                linkedin
                 <img class="arrow" src="images/blue-arrow-angle.svg" alt="arrowvector">
-            </a>
-        </div>
-        <ul class="footerItems">
-            <li>jakedesign.io</li>
-            <li>•</li>
-            <li>2021</li>
-            <li>•</li>
-            <li>self coded</li>
-        </ul>
-    </footer>
-</div>
-
-<!-- BOTTOM BAR -->
-    <div class="bottom-bar">
-        <div class="bar">
-            <p>hello 👋🏽 you've reached the bottom of the page</p>
+            </a></li>
+            <ul>
+                <li>© jakedesign.io</li>
+                <li>•</li>
+                <li>2021</li>
+                <li>•</li>
+                <li>self coded</li>
+            </ul>
         </div>
     </div>
+</footer>
 
+<div class="bottombar">
+    <h2>hello 👋🏽</h2>
+</div>
     <!-- JAVASCRIPT -->
     <script src="javascript/app.js"></script>
     <script src="javascript/cursor.js"></script>
