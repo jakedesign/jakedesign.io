@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: white;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    color: #375BBB;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    color: #375BBB;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #375BBB;
+}
+
+.cursor {
+    position: absolute;
+    width: 3rem; 
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+}
+
+.link-grow{
+    transform: scale(2);
+}
+
+/****************** NAV ******************/
+
+.nav-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 18px;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.logo a:hover {
+    color: #375abb5e;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 40px;
+    font-size: 18px;
+    transition: 0.4s;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.nav-links li:hover {
+    background-image: url(../images/underline-tan-straight.svg);
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: 0px 19px;
+}
+
+.nav-links li img {
+    padding-left: 10px;
+}
+
+.dropdown a {
+    font-size: 18px;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.dropdown a img {
+    padding-left: 10px;
+}
+
+.nav-links .arrow1 {
+    transition: 0.3s;
+}
+
+.dropdown:hover .arrow1 {
+    transform: rotate(90deg);
+    padding-bottom: 5px;
+}
+
+
+/* NAV DROPDOWN - WORK */
+
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #375BBB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(-69%, 0%);
+}
+
+.dropdownContent a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px 13px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdownContent a:hover {
+    background-color: #e6e6e6;
+    font-weight: 400;
+    color: #375BBB;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+/* BURGER */
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 29px;
+    height: 2px;
+    background-color: #375BBB;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-38deg) translate(-4px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(38deg) translate(-4px,-6px);
+}
+
+/* BURGER SCREEN */
+
+@media screen and (max-width:796px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        z-index: 2;
+        right: 0px;
+        height: 88vh;
+        top: 8vh;
+        background-color: #375BBB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        padding: 4vh;
+        opacity: 0;
+    }
+    .nav-links a {
+        font-size: 25px;
+        font-weight: 400;
+        color: #D0CDCB;
+    }
+    .nav-links li:nth-child(4) {
+        padding: 4vh 0 0 0;
+    }
+    .burger {
+        display: block;
+    }
+    .dropdown:hover .dropdownContent {
+        display: none;
+    }
+    .logo {
+        padding-bottom: 0px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************** FOOTER ******************/
+
+footer {
+    flex-wrap: wrap;
+    background-color: #e6e6e6;
+    padding: 50px 0;
+}
+
+.foot-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.topfoot li a {
+    font-size: 28px; 
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.topfoot .hello {
+    transition: 0.4s;
+}
+
+.topfoot .hello:hover {
+    /* transform: scale(1.03); */
+    background-image: url(../images/underline-tan-straight.svg);
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: 0px 31px;
+}
+
+.btmfoot .linkedin {
+    transition: 0.4s;
+}
+
+.btmfoot .linkedin:hover {
+    /* transform: scale(1.1); */
+    background-image: url(../images/underline-tan-straight.svg);
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: 0px 19px;
+}
+
+.btmfoot li a {
+    font-size: 18px;
+    cursor: url('../images/cursor-blackdot.svg'), auto;
+}
+
+.topfoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.h-line {
+    border: 1px solid #375BBB;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 10px 0;
+}
+
+.btmfoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.btmfoot ul{
+   display: flex;
+}
+
+.btmfoot ul li{
+   padding-left: 20px;
+}
+
+.btmfoot img {
+    padding-left: 2px;
+}
+
+.topfoot img {
+    height: 25px;
+}
+
+
+
+
+/* BOTTOM BAR */
+
+.bottombar {
+    height: 40px;
+    width: 100%;
+    background-color: #375BBB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottombar h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+/* BOUNCE ANIMATION */
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-8px);}
+    60% {transform: translateY(-10px);}
+  }
+  .bounce {
+    animation-name: bounce;
+  }
+

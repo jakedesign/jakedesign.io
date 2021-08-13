@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     cursor: url('../images/cursor-blackdot.svg'), auto;
 }
 
@@ -27,17 +27,12 @@ img {
     width: 100%;
 }
 
-.landing-box {
-    background-color:#D0CDCB;
-    height: 100vh;
-}
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 10px;
     padding-top: 20px;
-    
+
 }
 
 .cursor {
@@ -87,10 +82,11 @@ nav {
 }
 
 .logo .tweak:hover {
-    background-image: url(../images/underline-tan-straight.svg);
+    /* background-image: url(../images/underline-tan-straight.svg); */
     background-repeat: no-repeat;
     background-size: 120px;
     background-position: 8px 34px;
+    color: #2346a577;
 }
 
 .nav-links li {
@@ -135,8 +131,7 @@ nav {
 }
 
 .nav-links .tweak:hover {
-    transform: rotate(-5deg);
-    background-image: url(../images/underline-tan-angle.svg);
+    background-image: url(../images/underline-tan-straight.svg);
     background-repeat: no-repeat;
     background-position: 0 70px;
     background-position-y: 30px;
@@ -174,7 +169,7 @@ li.dropdown {
 }
 
 .dropdownContent a:hover {
-    background-color: #D0CDCB;
+    background-color: #eeedea;
     color: #375BBB;
     font-weight: 400;
 }
@@ -365,7 +360,7 @@ li.dropdown {
 /* FOOTER BOX */
 
 .footer-box {
-    background-color: #D0CDCB;
+    background-color: #e6e6e6;
     padding-top: 3vh;
     padding-bottom: 4vh;
     margin-top: 13vh;
@@ -480,7 +475,7 @@ footer {
 
 .bar p {
     font-size: 18px;
-    color: #D0CDCB;
+    color: #ffffff;
     font-weight: 300;
 }
 

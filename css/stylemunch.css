@@ -461,6 +461,7 @@ hr {
 
 .likewishwhatif {
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .featurepri {
@@ -471,11 +472,12 @@ hr {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+    justify-content: space-between;
 }
 
 .scen-one {
     display: flex;
-    width: 50%;
+    width: 47%;
 }
 
 .scen-one p{
@@ -484,7 +486,7 @@ hr {
 
 .scen-two {
     display: flex;
-    width: 50%;
+    width: 47%;
 }
 
 .scen-two p{
@@ -493,7 +495,7 @@ hr {
 
 .scen-three {
     display: flex;
-    width: 50%;
+    width: 47%;
     margin-top: 30px;
 }
 
@@ -503,7 +505,7 @@ hr {
 
 .scen-four {
     display: flex;
-    width: 50%;
+    width: 47%;
     margin-top: 30px;
 }
 
